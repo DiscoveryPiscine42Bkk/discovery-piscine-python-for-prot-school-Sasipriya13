@@ -1,4 +1,8 @@
 import math
-user_input = (input("Enter a number: "))
-rounded_up = math.ceil(user_input)
-print(f"The number {user_input} rounded up is {rounded_up}.")
+num = input("Give me a number: ")
+try:
+    f = float(num)
+    rounded = math.ceil(f)
+    print(rounded)
+except ValueError:
+    print("That's not a valid number.")
